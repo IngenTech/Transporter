@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_manage_trip"
+            android:icon="@drawable/ic_trip"
+            android:title="Manage Trip" />
+        <item
+            android:id="@+id/nav_live"
+            android:icon="@drawable/ic_live"
+            android:title="Live" />
+        <item
+            android:id="@+id/nav_track"
+            android:icon="@drawable/ic_track"
+            android:title="Track" />
+        <item
+            android:id="@+id/nav_weather"
+            android:icon="@drawable/ic_weather"
+            android:title="Weather Forecasting" />
+
+        <item
+            android:id="@+id/nav_pending_request"
+            android:icon="@drawable/ic_pending_requests"
+            android:title="Pending Request" />
+
+        <item
+            android:id="@+id/nav_fuel_eficiency"
+            android:icon="@drawable/ic_fuel"
+            android:title="Fuel Efficiency" />
+
+        <item
+            android:id="@+id/nav_road_assistance"
+            android:icon="@drawable/ic_road_assistance"
+            android:title="On Road Assistance" />
+
+        <item
+            android:id="@+id/nav_travel"
+            android:icon="@drawable/ic_travel"
+            android:title="Travel Report" />
+        <item
+            android:id="@+id/nav_tender"
+            android:icon="@drawable/ic_tender"
+            android:title="Tender" />
+
+
+    </group>
+
+    <item android:title="Settings">
+        <menu>
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/ic_profile"
+                android:title="Profile" />
+            <!--<item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />-->
+        </menu>
+    </item>
+
+</menu>

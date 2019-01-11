@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        card_view:cardCornerRadius="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <weatherrisk.com.wrms.transporter.utils.RobotoTextView
+                    android:id="@+id/vehicleName"
+                    style="@style/TextViewAppearance.MediumCondensed"
+                    android:text="UP 78 BR-4022" />
+
+                <ImageView
+                    android:id="@+id/arrivalArrowImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrival_arrow"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/vehicleName"
+                    android:layout_toEndOf="@+id/vehicleName"
+                    android:layout_marginLeft="85dp"
+                    android:layout_marginStart="85dp" />
+
+                <weatherrisk.com.wrms.transporter.utils.RobotoTextView
+                    style="@style/TextViewAppearance.ThinBoldCondensed"
+                    android:id="@+id/arrival"
+                    android:layout_toRightOf="@id/arrivalArrowImage"
+                    android:text="12:48" />
+
+                <ImageView
+                    android:id="@+id/departureArrowImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_departure_arrow"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/arrival"/>
+
+                <weatherrisk.com.wrms.transporter.utils.RobotoTextView
+                    style="@style/TextViewAppearance.ThinBoldCondensed"
+                    android:layout_toRightOf="@id/departureArrowImage"
+                    android:text="12:48" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <weatherrisk.com.wrms.transporter.utils.RobotoTextView
+                style="@style/TextViewAppearance.ThinLight"
+                android:id="@+id/startPlace"
+                android:text="kalyanpur, kanpur" />
+            <weatherrisk.com.wrms.transporter.utils.RobotoTextView
+                style="@style/TextViewAppearance.ThinLight"
+                android:id="@+id/endPlace"
+                android:text="nawabganj@ lucknow" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/main_color_grey_600"/>
+
+           <Button
+               android:id="@+id/closeTrip"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@android:color/transparent"
+               android:textColor="@color/colorPrimary"
+               android:text="CLOSE TRIP"
+               android:layout_gravity="end"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

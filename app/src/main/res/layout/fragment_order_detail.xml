@@ -1,0 +1,158 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="weatherrisk.com.wrms.transporter.fragment.OrderDetailFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/design_layouts1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/customerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Mahendra Yadav"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fromLocation"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/design_layouts1"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Source : Block 23/2 Tilak Nagar,Kanpur" />
+
+            <TextView
+                android:id="@+id/toLocation"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/design_layouts1"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Destination : Sector 56 Sanatan Rao,Ahemdabad" />
+
+            <TextView
+                android:id="@+id/vehicleCapacity"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/design_layouts1"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Vehicle Capacity : 45 tones" />
+
+            <TextView
+                android:id="@+id/noOfVehicle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/design_layouts1"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Number Of Vehicle : 2" />
+
+            <!--<TextView
+                android:id="@+id/productCotegory"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/design_layouts1"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Category : Grain 1, Grain" />-->
+
+            <TextView
+                android:id="@+id/doorStatus"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/design_layouts1"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Door Status : Closed" />
+
+            <TextView
+                android:id="@+id/refrigeratorStatus"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/design_layouts1"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Refrigerated : Not Required" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/design_layouts1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/invoiceDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Invoice Detail"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <!--<ExpandableListView
+                android:id="@+id/invoiceListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:dividerHeight="1dp"
+                android:transcriptMode="alwaysScroll" />-->
+
+            <LinearLayout
+                android:id="@+id/invoiceContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/accept"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Accept"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="1dp"
+                android:background="@drawable/button_background"/>
+
+            <Button
+                android:id="@+id/reject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Reject"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/button_background"/>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

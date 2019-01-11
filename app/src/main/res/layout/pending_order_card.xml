@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        card_view:cardCornerRadius="4dp">
+
+        <LinearLayout
+            android:id="@+id/pending_row"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/titleTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Narayan Transport"
+                    android:textColor="@color/main_color_grey_600"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/action3Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/titleTxt"
+                    android:layout_alignBottom="@+id/titleTxt"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@android:color/transparent"
+                    android:text="Order Date"
+                    android:textColor="@color/blue_gray"
+                    android:textSize="13sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/rightTitleTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="2 / Open Door / Refrigerated Not"
+                    android:textColor="@color/blue_gray"
+                    android:textSize="12sp"
+                    />
+
+
+                <weatherrisk.com.wrms.transporter.utils.RobotoTextView
+                    android:id="@+id/rightContect1Txt"
+                    style="@style/TextViewAppearance.ThinThin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:gravity="end"
+                    android:text="03-12-2016" />
+            </RelativeLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <weatherrisk.com.wrms.transporter.utils.RobotoTextView
+                    android:id="@+id/content3Txt"
+                    style="@style/TextViewAppearance.ThinLight"
+                    android:layout_marginRight="5dp"
+                    android:text="2017-02-15" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(" />
+
+                <weatherrisk.com.wrms.transporter.utils.RobotoTextView
+                    android:id="@+id/content1Txt"
+                    style="@style/TextViewAppearance.ThinLight"
+                    android:text="kanpur" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_double_arrow" />
+
+                <weatherrisk.com.wrms.transporter.utils.RobotoTextView
+                    android:id="@+id/content2Txt"
+                    style="@style/TextViewAppearance.ThinLight"
+                    android:text="lucknow" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=")" />
+
+            </LinearLayout>
+
+            <!--<View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+
+-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/main_color_grey_600" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="clip_vertical">
+
+                <Button
+                    android:id="@+id/actionviewButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="start"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:background="@android:color/transparent"
+                    android:text="VIEW DOCUMENT"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:background="@color/Gray"
+                    android:layout_gravity="center_vertical"/>
+
+                <Button
+                    android:id="@+id/action1Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:background="@android:color/transparent"
+                    android:text="UPLOAD DOCUMENT"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:background="@color/Gray"
+                    android:layout_gravity="center_vertical"/>
+
+                <Button
+                    android:id="@+id/action2Button"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:layout_gravity="end"
+                    android:gravity="center"
+                    android:background="@android:color/transparent"
+                    android:text="CANCEL"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

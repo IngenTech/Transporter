@@ -1,0 +1,419 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--tools:activity="">-->
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="5dp"
+        android:layout_above="@+id/btnSaveChanges">
+        <!--root Layout start-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/design_layouts"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/edit_image"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_centerInParent="true"
+
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/user" />
+
+
+            </RelativeLayout>
+
+            <!--Layout Personal Information start-->
+            <LinearLayout
+                android:id="@+id/personalInfoLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="5dp"
+                android:paddingRight="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="5dp"
+                    android:text="Pan No"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <EditText
+                    android:id="@+id/edtTxtPanNo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/design_layouts"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="5dp"
+                    android:text="Firm Name"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <EditText
+                    android:id="@+id/edtTxtFirmName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:inputType="text"
+                    android:background="@drawable/design_layouts"
+                    android:paddingLeft="10dp" />
+
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="5dp"
+                    android:text="Contact Name *"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <EditText
+                    android:id="@+id/edtTxtContactName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:inputType="text"
+                    android:background="@drawable/design_layouts"
+                    android:paddingLeft="10dp" />
+
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="5dp"
+                    android:text="Personal Contact Number"
+                    android:textColor="@color/colorPrimaryDark" />
+
+
+                <EditText
+                    android:id="@+id/edtTxtPersonalContact"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/design_layouts"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp" />
+
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="5dp"
+                    android:text="Home Contact Number"
+                    android:textColor="@color/colorPrimaryDark" />
+
+
+                <EditText
+                    android:id="@+id/edtTxtHomeContact"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/design_layouts"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp" />
+
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="5dp"
+                    android:text="Office Contact Number"
+                    android:textColor="@color/colorPrimaryDark" />
+
+
+                <EditText
+                    android:id="@+id/edtTxtOfficeContact"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/design_layouts"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp" />
+
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="5dp"
+                    android:text="Tin No."
+                    android:textColor="@color/colorPrimaryDark" />
+
+
+                <EditText
+                    android:id="@+id/edtTxtTinNo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/design_layouts"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp" />
+
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="5dp"
+                    android:text="State *"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <Spinner
+                    android:id="@+id/spinnerState"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/design_layouts"
+                    android:paddingLeft="5dp"
+                    android:transitionGroup="false" />
+
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="5dp"
+                    android:text="City *"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <Spinner
+                    android:id="@+id/spinnerCity"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/design_layouts"
+                    android:paddingLeft="5dp"
+                    android:transitionGroup="false" />
+
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="5dp"
+                    android:text="Address"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <EditText
+                    android:id="@+id/edtTxtAddress"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:inputType="text"
+                    android:background="@drawable/design_layouts"
+                    android:paddingLeft="10dp" />
+
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="5dp"
+                    android:text="Email address *"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <EditText
+                    android:id="@+id/edtTxtEmail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/design_layouts"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="10dp" />
+
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="5dp"
+                    android:text="Bank Name"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <EditText
+                    android:id="@+id/edtTxtBankName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:inputType="text"
+                    android:background="@drawable/design_layouts"
+                    android:paddingLeft="10dp" />
+
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="5dp"
+                    android:text="Bank Account No."
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <EditText
+                    android:id="@+id/edtTxtBankAccountNo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:inputType="number"
+                    android:background="@drawable/design_layouts"
+                    android:paddingLeft="10dp" />
+
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="5dp"
+                    android:text="Bank Branch Name"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <EditText
+                    android:id="@+id/edtTxtBankBranchName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:inputType="text"
+                    android:background="@drawable/design_layouts"
+                    android:paddingLeft="10dp" />
+
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="5dp"
+                    android:text="Bank Branch Code"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <EditText
+                    android:id="@+id/edtTxtBankBranchCode"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:inputType="text"
+                    android:background="@drawable/design_layouts"
+                    android:paddingLeft="10dp" />
+
+
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+
+                <CheckBox
+                    android:id="@+id/doNotCall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Do Not Call"
+                    android:textColor="@color/colorPrimaryDark"/>
+
+
+            </LinearLayout>
+
+            <android.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnSaveChanges"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/button_background"
+        android:text="Save Changes"
+        android:textColor="@android:color/white" />
+
+
+
+</RelativeLayout>

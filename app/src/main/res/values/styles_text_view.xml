@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="TextViewAppearance" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="typeface">robotoRegular</item>
+        <!--<item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingLeft">26dp</item>
+        <item name="android:paddingRight">26dp</item>-->
+        <!-- Supports API Level 17+ -->
+        <!-- <item name="android:paddingStart">26dp</item> -->
+        <!-- Supports API Level 17+ -->
+        <!-- <item name="android:paddingEnd">26dp</item> -->
+    </style>
+    
+	<!-- Typography style 1 -->
+
+    <style name="TextViewAppearance.TitleBoldCondenced" parent="@style/TextViewAppearance">
+        <item name="typeface">robotoBoldCondensed</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/main_color_grey_600</item>
+    </style>
+
+    <style name="TextViewAppearance.MediumBoldCondensed" parent="@style/TextViewAppearance">
+        <item name="typeface">robotoBoldCondensed</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/main_color_grey_600</item>
+    </style>
+
+    <style name="TextViewAppearance.ThinBoldCondensed" parent="@style/TextViewAppearance">
+        <item name="typeface">robotoBoldCondensed</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/main_color_grey_600</item>
+    </style>
+
+
+
+    <style name="TextViewAppearance.TitleCondenced" parent="@style/TextViewAppearance">
+        <item name="typeface">robotoCondensed</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/main_color_grey_600</item>
+    </style>
+
+    <style name="TextViewAppearance.MediumCondensed" parent="@style/TextViewAppearance">
+        <item name="typeface">robotoCondensed</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/main_color_grey_600</item>
+    </style>
+
+    <style name="TextViewAppearance.ThinCondensed" parent="@style/TextViewAppearance">
+        <item name="typeface">robotoCondensed</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/main_color_grey_600</item>
+    </style>
+
+
+    <style name="TextViewAppearance.TitleThin" parent="@style/TextViewAppearance">
+        <item name="typeface">robotoThin</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/main_color_grey_600</item>
+    </style>
+
+    <style name="TextViewAppearance.MediumThin" parent="@style/TextViewAppearance">
+        <item name="typeface">robotoThin</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/main_color_grey_600</item>
+    </style>
+
+    <style name="TextViewAppearance.ThinThin" parent="@style/TextViewAppearance">
+        <item name="typeface">robotoThin</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/main_color_grey_600</item>
+    </style>
+
+
+
+    <style name="TextViewAppearance.TitleMedium" parent="@style/TextViewAppearance">
+        <item name="typeface">robotoMedium</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/main_color_grey_600</item>
+    </style>
+
+    <style name="TextViewAppearance.MediumMedium" parent="@style/TextViewAppearance">
+        <item name="typeface">robotoMedium</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/main_color_grey_600</item>
+    </style>
+
+    <style name="TextViewAppearance.ThinMedium" parent="@style/TextViewAppearance">
+        <item name="typeface">robotoMedium</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/main_color_grey_600</item>
+    </style>
+
+
+    <style name="TextViewAppearance.TitleLight" parent="@style/TextViewAppearance">
+        <item name="typeface">robotoLight</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/main_color_grey_600</item>
+    </style>
+
+    <style name="TextViewAppearance.MediumLight" parent="@style/TextViewAppearance">
+        <item name="typeface">robotoLight</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/main_color_grey_600</item>
+    </style>
+
+    <style name="TextViewAppearance.ThinLight" parent="@style/TextViewAppearance">
+        <item name="typeface">robotoLight</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/main_color_grey_600</item>
+    </style>
+
+    <style name="TextViewAppearance.ThinLight_text" parent="@style/TextViewAppearance">
+        <item name="typeface">robotoLight</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+</resources>

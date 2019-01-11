@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="weatherrisk.com.wrms.transporter">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name="weatherrisk.com.wrms.transporter.AppController"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/map_debug_key" />
+        <!--
+            <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/map_release_key" />
+        -->
+
+        <activity
+            android:name=".TransporterMainActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/customer_app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".EditProfileActivity"
+            android:label="Edit Pofile"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name=".CustomerOrderActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".AddTripActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="Add Trip"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".OtpVerificationActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".SignupActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+
+        </activity>
+
+
+        <activity
+            android:name=".transporter.ViewDocumentActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="View Document"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".transporter.UploadDocumentActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="Upload Document"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+
+        <activity
+            android:name=".orders_action_activity.TravelReportActivity"
+            android:configChanges="orientation|smallestScreenSize"
+            android:label="Travel Report"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name=".orders_action_activity.TrackMapActivity"
+            android:configChanges="orientation|smallestScreenSize"
+            android:label="Track Map"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+
+        <activity
+            android:name=".orders_action_activity.LiveMapActivity"
+            android:configChanges="orientation|smallestScreenSize"
+            android:label="Live Map"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name=".orders_action_activity.DistanceReportActivity"
+            android:configChanges="orientation|smallestScreenSize"
+            android:label="Distance Report"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name=".orders_action_activity.HaltReportActivity"
+            android:configChanges="orientation|smallestScreenSize"
+            android:label="Halt Report"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name=".orders_action_activity.AlertActivity"
+            android:configChanges="orientation|smallestScreenSize"
+            android:label="Alert List"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name=".orders_action_activity.Navigation"
+            android:configChanges="orientation|smallestScreenSize"
+            android:label="Navigation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:configChanges="orientation|smallestScreenSize"
+            android:label="Change Password"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name=".DetailActivity"
+            android:configChanges="orientation|smallestScreenSize"
+            android:label="Detail Activity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name=".transporter.VehicalManageActivity"
+            android:configChanges="orientation|smallestScreenSize"
+            android:label="Vehicle Manage"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name=".transporter.AddVehicalActivity"
+            android:configChanges="orientation|smallestScreenSize"
+            android:label="Add Vehicle"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+
+        <activity
+            android:name=".vehicalDocument.ViewVehicalDocuments"
+            android:configChanges="orientation|smallestScreenSize"
+            android:label="View Document"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name=".vehicalDocument.UploadVehicalDocumentActivity"
+            android:configChanges="orientation|smallestScreenSize"
+            android:label="Upload Document"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name=".expenses.DriverExpensesActivity"
+            android:configChanges="orientation|smallestScreenSize"
+            android:label="Driver Expense"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name=".expenses.VehicalExpensesActivity"
+            android:configChanges="orientation|smallestScreenSize"
+            android:label="Vehicle Expense"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name=".transporter.AddDriverExpenseActivity"
+            android:configChanges="orientation|smallestScreenSize"
+            android:label="Add Driver Expense"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name=".expenses.AddVehicleExpens"
+            android:configChanges="orientation|smallestScreenSize"
+            android:label="Add Vehicle Expense"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name=".BranchListActivity"
+            android:label="Branch List"
+            android:windowSoftInputMode="stateHidden"/>
+
+        <activity
+            android:name=".VehiclePictureListActivity"
+            android:label="Branch List"
+            android:windowSoftInputMode="stateHidden">
+
+        </activity>
+
+        <activity
+            android:name=".AddBranchActivity"
+            android:label="Add Branch"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+        </activity>
+
+
+        <activity
+            android:name=".transporter.VihicleChoiceActivity"
+            android:label="Choose Vehicle"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+        </activity>
+
+
+        <activity
+            android:name=".orders_action_activity.AddOnRoadAssistanceActivity"
+            android:label="Add Road Assistance"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+        </activity>
+
+        <activity
+            android:name=".EditBranchActivity"
+            android:label="Edit Branch"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+        </activity>
+
+    </application>
+
+</manifest>

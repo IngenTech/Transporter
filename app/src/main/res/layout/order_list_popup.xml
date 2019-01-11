@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_element"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5604d"
+    android:orientation="vertical"
+    android:padding="10sp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/title_popup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Title"
+        android:textSize="15sp"
+        android:visibility="visible"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:padding="5dp"/>
+
+        <ImageView
+            android:id="@+id/close_popup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cross"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+
+
+    <Button
+        android:id="@+id/track_popup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="TRACK"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/order_btn_bg"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:padding="7dp"/>
+    <Button
+        android:id="@+id/live_popup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="LIVE"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/order_btn_bg"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:padding="7dp"/>
+    <Button
+        android:id="@+id/travel_popup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="TRAVEL"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/order_btn_bg"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:padding="7dp"/>/>
+    <Button
+        android:id="@+id/halt_popup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="HALT"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/order_btn_bg"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:padding="7dp"/>/>
+
+    <Button
+        android:id="@+id/distance_popup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="DISTANCE"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/order_btn_bg"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:padding="7dp"/>/>
+
+    <Button
+        android:id="@+id/alert_popup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="ALERT"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/order_btn_bg"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:padding="7dp"/>
+
+    <Button
+        android:id="@+id/navigation_popup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="NAVIGATION"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/order_btn_bg"
+        android:gravity="center"
+        android:padding="7dp"/>
+
+
+
+</LinearLayout>
+
